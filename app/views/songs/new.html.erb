@@ -1,0 +1,19 @@
+<h1>Create Song</h1>
+<%= form_for @song do |t| %>
+  <%= t.label :name %>
+  <%= t.text_field :name %><br>
+
+  <%= t.label :artist_id %>
+  <%= t.text_field :artist_id %>
+
+  <%= t.label :genre_id %>
+  <%= t.text_field :genre_id %>
+
+<!--  <%#= t.label :artist_id %><br>-->
+<!--  <%#= t.collection_radio_buttons :artist_id, Artist.all, :id, :name %><br>-->
+
+<!--  <%#= t.label :genre_id %><br>-->
+<!--  <%#= t.collection_radio_buttons :genre_id, Genre.all, :id, :name %><br>-->
+
+  <%= t.submit %>
+<% end %>
